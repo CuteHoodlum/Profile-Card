@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <title>Profile Card</title>
 </head>
+
 <body>
     <div class="profile-card">
-        <img src="profile picture.jpeg" alt="Profile Picture" data-testid="profilePicture">
+        <img src="profile picture.jpeg" alt="Profile Picture" data-testid="profilePicture" class="picture">
         <div class="info">
             <h2 data-testid="fullName">Cute Hoodlum</h2>
-            <p data-testid="jobTitle">Frontend Developer</p>
-            <p data-testid="shortBio">Passionate about coding and technology. Love to create innovative solutions.</p>
-            <p data-testid="currentLocation">Lagos, Nigeria</p>
-            <p data-testid="emailAddress">kayodegbolahan01@gmail.com</p>
+            <p data-testid="jobTitle" class="job-title"><i class="fas fa-laptop-code"></i> Frontend Developer</p>
+            <p data-testid="shortBio" class="short-bio">Passionate about coding and technology. <br> Love to create innovative solutions.</p>
+            <p data-testid="currentLocation" class="location"><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</p>
+            <p data-testid="emailAddress" class="email"><i class="fas fa-envelope"></i> kayodegbolahan01@gmail.com</p>
             <div class="social-links" data-testid="socialLinks">
-                <a href="https://x.com/cute_hoodlum" target="_blank">Twitter</a>
-                <a href="https://github.com/cuteHoodlum" target="_blank">GitHub</a>
+                <a href="https://x.com/cute_hoodlum" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://github.com/cuteHoodlum" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
             </div>
             <p data-testid="currentTimeUTC" id="currentTimeUTC"></p>
         </div>
     </div>
     <script src="app.js"></script>
 </body>
+
 </html>
+
